@@ -2,7 +2,7 @@
 #
 # We are using the functionsES6 folder to code and translating at deploy time, so ignore the generated code folder
 #
-/functions
+functions/
 
 
 
