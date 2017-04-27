@@ -6,4 +6,4 @@ server.get("*", (req, res) => {
   res.send("Hello from Express on Cloud Functions for Firebase!")
 })
 
-exports.helloWorld = https.onRequest(server)
+export const helloWorld = https.onRequest(server)
