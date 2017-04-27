@@ -4,10 +4,10 @@ Host a GraphQL Server in Cloud Functions for Firebase [with ES6+](https://github
 
 Here is the accompanying [Medium Post]() (TBA).
 
-This method is markedly simpler than any other GraphQL-on-FaaS method I have seen. No custom packages for [GCP](https://github.com/nicolasdao/google-graphql-functions) or struggling with API Gateway or complex setup instructions [AWS](https://github.com/apollographql/graphql-server/tree/master/packages/graphql-server-lambda). Just use the [simplest, community drive implementation](http://dev.apollodata.com/tools/graphql-server/index.html).
+This method is markedly simpler than any other GraphQL-on-FaaS method I have seen. No custom packages for [GCP](https://github.com/nicolasdao/google-graphql-functions) or struggling with API Gateway or complex setup instructions for [AWS](https://github.com/apollographql/graphql-server/tree/master/packages/graphql-server-lambda). Just use the [most prominent, community drive implementation](http://dev.apollodata.com/tools/graphql-server/index.html).
 
 ## TLDR;
-Host your GraphQL Server on Cloud Functions enabling a low-cost, rapid development experience with GraphQL leveraging Firebase's sweet, sweet developer experience.
+Host your GraphQL Server on Cloud Functions enabling a low-cost, rapid development with GraphQL leveraging Firebase's sweet, sweet developer experience.
 
 Cloud Functions can accept an [Express Server object directly](http://stackoverflow.com/questions/43579442/cloud-functions-for-firebase-and-express), so leverage the Apollo [graphql-server-express](https://github.com/apollographql/graphql-server) pacakge to setup our GraphQL server.
 
