@@ -2,9 +2,13 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "firebase-admin": "~4.1.2",
-    "firebase-functions": "^0.5"
+    "firebase-functions": "^0.5",
+    "graphql": "^0.9.3",
+    "graphql-server-express": "^0.7.2",
+    "graphql-tools": "^0.11.0"
   },
   "private": true
 }

@@ -1,9 +1,8 @@
 import { https } from "firebase-functions"
-import { Router } from "express"
+import setupGraphQLServer from "./graphql/server"
 
-const server = new Router()
-server.get("*", (req, res) => {
-  res.send("Hello from Express on Cloud Functions for Firebase!")
-})
+/* CF for Firebase with graphql-server-express */
+const graphQLServer = setupGraphQLServer()
 
-export const helloWorld = https.onRequest(server)
+// https://us-central1-<project-name>.cloudfunctions.net/api
+export const api = https.onRequest(graphQLServer)
