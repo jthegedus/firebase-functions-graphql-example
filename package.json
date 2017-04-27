@@ -1,0 +1,19 @@
+{
+  "name": "firebase-functions-graphql-example",
+  "version": "1.0.0",
+  "description": "GraphQL server running on Cloud Functions for Firebase",
+  "repository": "https://github.com/jthegedus/firebase-functions-graphql-example.git",
+  "author": "<jthegedus@jttech.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "prepackage-functions": "rimraf functions",
+    "package-functions": "babel 'functionsES6' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
+    "postpackage-functions": "cd functions && yarn",
+    "deploy": "yarn run package-functions && firebase deploy"
+  }
+}
