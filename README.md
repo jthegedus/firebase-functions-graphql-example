@@ -16,11 +16,12 @@ The schema and resolvers are the same used in the [Apollo example](https://githu
 ## Installation
 ```
 git clone https://github.com/jthegedus/firebase-functions-graphql-example
-cd firebase-functions-es6-example
+cd firebase-functions-graphql-example
 yarn install
 ```
 ## Deploy to Firebase
 ```
+yarn
 yarn deploy
 ```
 N.B.: You will need to connect the project to your Firebase project. Edit the name in .firebaserc
