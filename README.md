@@ -21,7 +21,6 @@ yarn install
 ```
 ## Deploy to Firebase
 ```
-yarn
 yarn deploy
 ```
 N.B.: You will need to connect the project to your Firebase project. Edit the name in .firebaserc
