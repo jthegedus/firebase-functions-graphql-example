@@ -2,18 +2,30 @@
   "name": "firebase-functions-graphql-example",
   "version": "1.0.0",
   "description": "GraphQL server running on Cloud Functions for Firebase",
-  "repository": "https://github.com/jthegedus/firebase-functions-graphql-example.git",
-  "author": "<jthegedus@jttech.io>",
+  "homepage": "https://github.com/jthegedus/firebase-functions-graphql-example#readme",
+  "bugs": {
+    "url": "https://github.com/jthegedus/firebase-functions-graphql-example/issues"
+  },
   "license": "MIT",
+  "author": "James Hegedus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jthegedus/firebase-functions-graphql-example.git"
+  },
+  "scripts": {
+    "deploy": "yarn run package:functions && firebase deploy",
+    "format": "yarn run format:js && yarn run format:pkgjson",
+    "format:js": "prettier --write --no-semi --list-different './firebaseFunctions/**/*.js'",
+    "format:pkgjson": "sort-package-json",
+    "prepackage:functions": "rimraf functions",
+    "package:functions": "babel 'firebaseFunctions' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
+    "postpackage:functions": "cd functions && yarn"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "rimraf": "^2.6.1"
-  },
-  "scripts": {
-    "prepackage-functions": "rimraf functions",
-    "package-functions": "babel 'functionsES6' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
-    "postpackage-functions": "cd functions && yarn",
-    "deploy": "yarn run package-functions && firebase deploy"
+    "prettier": "^1.4.4",
+    "rimraf": "^2.6.1",
+    "sort-package-json": "^1.7.0"
   }
 }
