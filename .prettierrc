@@ -1,0 +1,7 @@
+{
+  "semi": false,
+  "overrides": [{
+    "files": [".prettierrc", "package,json"],
+    "options": { "parser": "json" }
+  }]
+}
