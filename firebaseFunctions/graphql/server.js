@@ -18,7 +18,7 @@ const setupGraphQLServer = () => {
   // /api/graphiql
   graphQLServer.use(
     "/graphiql",
-    graphiqlExpress({ endpointURL: "/api/graphql" })
+    graphiqlExpress({ endpointURL: "graphql" })
   )
 
   // /api/schema
