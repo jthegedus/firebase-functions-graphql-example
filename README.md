@@ -1,4 +1,8 @@
-# GraphQL Server on Cloud Functions for Firebase
+# 🚨 [deprecated, new example at firebase-gcp-examples](https://github.com/jthegedus/firebase-gcp-examples)
+
+---
+
+## GraphQL Server on Cloud Functions for Firebase
 
 Host a GraphQL Server in Cloud Functions for Firebase [with ES6+](https://github.com/jthegedus/firebase-functions-es6-example)!
 
